@@ -1,4 +1,4 @@
-package com.example.planner.weekly;
+package com.example.couchpotatosplan.weekly;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

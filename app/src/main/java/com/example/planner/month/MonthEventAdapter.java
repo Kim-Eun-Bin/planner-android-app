@@ -1,23 +1,25 @@
-package com.example.planner.month;
+package com.example.couchpotatosplan.month;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.planner.R;
+import com.example.couchpotatosplan.R;
+import com.example.couchpotatosplan.myday.MyDayEvent;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
 public class MonthEventAdapter extends ArrayAdapter<MonthEvent> {
-    private TextView excludeCon;
-    private TextView start_tv;
-    private TextView end_tv;
+    private DatabaseReference mDatabase;
 
     public MonthEventAdapter(@NonNull Context context, List<MonthEvent> events)
     {
@@ -31,29 +33,32 @@ public class MonthEventAdapter extends ArrayAdapter<MonthEvent> {
         MonthEvent event = getItem(position);
 
         if (view == null)
-            view = LayoutInflater.from(getContext()).inflate(R.layout.month_exclude_cell, parent, false);
+            view = LayoutInflater.from(getContext()).inflate(R.layout.exclude_cell, parent, false);
 
-        excludeCon = view.findViewById(R.id.excludeContent);
-        start_tv = view.findViewById(R.id.time_start);
-        end_tv = view.findViewById(R.id.time_end);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        TextView excludeCon = view.findViewById(R.id.excludeContent);
+        TextView start = view.findViewById(R.id.time_start);
+        TextView end = view.findViewById(R.id.time_end);
+
 
         String content = event.getContent();
 
-        String start;
-        if(event.getStart_hour() < 10) //00:00
-            start = "0"+ event.getStart_hour() + ":" + event.getStart_min();
+        String starting;
+        if(event.getStartTime() < 10) //00:00
+            starting = "0"+ event.getStartTime() + ":00";
         else //12:00
-            start = event.getStart_hour() + ":" + event.getStart_min();
+            starting = event.getStartTime() + ":00";
 
-        String end;
-        if(event.getEnd_hour() < 10)
-            end = "0"+ event.getEnd_hour() + ":" + event.getEnd_min();
+        String ending;
+        if(event.getStartTime() < 10)
+            ending = "0"+ event.getStartTime() + ":00";
         else
-            end = event.getEnd_hour() + ":" + event.getEnd_min();
+            ending = event.getStartTime() + ":00";
 
         excludeCon.setText(content);
-        start_tv.setText(start);
-        end_tv.setText(end);
+        start.setText(starting);
+        end.setText((ending));
 
         return view;
     }

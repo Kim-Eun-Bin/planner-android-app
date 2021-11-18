@@ -1,4 +1,4 @@
-package com.example.planner.myday;
+package com.example.couchpotatosplan.myday;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 
@@ -8,12 +8,16 @@ import java.util.ArrayList;
 public class MyDayEventList {
     public static ArrayList<MyDayEvent> eventsList = new ArrayList<>();
 
-    public static ArrayList<MyDayEvent> eventsForDate(String date) {
+    public static ArrayList<MyDayEvent> eventsForDate(String date)
+    {
         ArrayList<MyDayEvent> events = new ArrayList<>();
 
-        for (MyDayEvent event : eventsList) {
-            if (event.getDate().equals(date))
-                events.add(event);
+        for(MyDayEvent event : eventsList)
+        {
+            if(event != null) {
+                if (event.getDate().equals(date))
+                    events.add(event);
+            }
         }
 
         return events;
