@@ -1,32 +1,34 @@
 package com.example.couchpotatosplan.myday;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.ArrayList;
+import com.google.firebase.database.IgnoreExtraProperties;
 
+@IgnoreExtraProperties
 public class MyDayEvent {
-    public static ArrayList<MyDayEvent> eventsList = new ArrayList<>();
+    private Long id;
+    private String date;
+    private int time;
+    private String content;
+    private boolean checked;
 
-    public static ArrayList<MyDayEvent> eventsForDate()
-    {
-        ArrayList<MyDayEvent> events = new ArrayList<>();
+    public MyDayEvent() {
 
-        for(MyDayEvent event : eventsList)
-        {
-            events.add(event);
-        }
-
-        return events;
     }
 
-
-    private String content;
-    private int time;
-
-    public MyDayEvent(int time, String content)
+    public MyDayEvent(Long id, String date, int time, String content, boolean checked)
     {
+        this.id = id;
+        this.date = date;
         this.time = time;
         this.content = content;
+        this.checked = checked;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getContent()
@@ -47,5 +49,21 @@ public class MyDayEvent {
     public void setTime(int time)
     {
         this.time = time;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public boolean isChecked() {
+        return checked;
+    }
+
+    public void setChecked(boolean checked) {
+        this.checked = checked;
     }
 }
