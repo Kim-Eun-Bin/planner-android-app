@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.couchpotatosplan">
+    package="com.example.planner">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -12,11 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.planner.MainActivity">
 
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name="com.example.planner.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".setting.Alarm" />
+        <receiver android:name="com.example.planner.setting.Alarm" />
     </application>
 
 </manifest>

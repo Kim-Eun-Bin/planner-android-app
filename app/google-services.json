@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "1090047819748",
-    "project_id": "teamproject-901ec",
-    "storage_bucket": "teamproject-901ec.appspot.com"
+    "project_number": "806748660875",
+    "project_id": "planner-anroid-app",
+    "storage_bucket": "planner-anroid-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1090047819748:android:7c3ed817004babb5e851f1",
+        "mobilesdk_app_id": "1:806748660875:android:ae5ade18d37a18098c608e",
         "android_client_info": {
-          "package_name": "com.example.couchpotatosplan"
+          "package_name": "com.example.planner"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1090047819748-p5300h3ccalit947rgkpshalhhj652oa.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.couchpotatosplan",
-            "certificate_hash": "38d13e0f70053a0284851992a88f4e03dfe68ef5"
-          }
-        },
-        {
-          "client_id": "1090047819748-70hak45agge7kfs6s7a4n0h0dsbolujb.apps.googleusercontent.com",
+          "client_id": "806748660875-iubjjffm777qf3mm9vv38a7o0b7d7b8t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAaGSNiM-KZCd-wUHNUHd8UgdmfygdQ6FY"
+          "current_key": "AIzaSyCEki0wwlgFYF6vlTBJAu6Y2CqoVJ_k-_A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1090047819748-70hak45agge7kfs6s7a4n0h0dsbolujb.apps.googleusercontent.com",
+              "client_id": "806748660875-iubjjffm777qf3mm9vv38a7o0b7d7b8t.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
