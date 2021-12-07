@@ -12,6 +12,12 @@
     <color name="nav">#EEEDFF</color>
     <color name="inside">#E2EAFF</color>
 
+    <color name="theme_yellow">#ffc400</color>
+    <color name="theme_coral">#d65c6b</color>
+    <color name="theme_baby_pink">#c9757f</color>
+    <color name="theme_purple">#615f85</color>
+    <color name="theme_midnight">#30343f</color>
+
     <color name="gray">#808080</color>
     <color name="list_divider_color">#989898</color>
 

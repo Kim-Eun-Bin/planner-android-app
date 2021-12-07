@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "806748660875",
+    "firebase_url": "https://planner-anroid-app-default-rtdb.firebaseio.com",
     "project_id": "planner-anroid-app",
     "storage_bucket": "planner-anroid-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:806748660875:android:ae5ade18d37a18098c608e",
+        "mobilesdk_app_id": "1:806748660875:android:6c289989a8f60cc68c608e",
         "android_client_info": {
-          "package_name": "com.example.planner"
+          "package_name": "com.example.slacker"
         }
       },
       "oauth_client": [

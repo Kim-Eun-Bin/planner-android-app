@@ -30,13 +30,33 @@
         <!-- 테마 설정 -->
 
         <View
-            android:id="@+id/view3"
+            android:id="@+id/view4"
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="10dp"
             android:background="@color/basic" />
+
+        <TextView
+            android:id="@+id/setting_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/setting_email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:textSize="17dp" />
 
         <TextView
             android:id="@+id/textView4"
@@ -56,10 +76,12 @@
             android:id="@+id/theme_btn"
             android:layout_width="match_parent"
             android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="24dp"
+            android:layout_marginRight="10dp"
             android:background="@color/white"
             android:stateListAnimator="@null"
-            android:text="테마                                                                  >"
+            android:text="테마                                                              >"
             android:textColor="@color/black"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -99,14 +121,26 @@
             android:id="@+id/custom_btn"
             android:layout_width="match_parent"
             android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
             android:background="@color/white"
             android:enabled="false"
             android:stateListAnimator="@null"
-            android:text="알림 커스터마이즈                                          >"
+            android:text="알림 커스터마이즈                                        >"
             android:textColor="@color/gray"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/alarm_btn" />
+
+        <Button
+            android:id="@+id/signout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/basic"
+            android:text="로그아웃" />
     </LinearLayout>
 </FrameLayout>
