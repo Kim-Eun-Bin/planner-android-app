@@ -1,4 +1,4 @@
-package com.example.couchpotatosplan.month;
+package com.example.planner.month;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 

@@ -1,6 +1,6 @@
-package com.example.couchpotatosplan.month;
+package com.example.planner.month;
 
-import static com.example.couchpotatosplan.weekly.CalendarUtils.formattedDate;
+import static com.example.planner.weekly.CalendarUtils.formattedDate;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,11 +15,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.couchpotatosplan.R;
-import com.example.couchpotatosplan.myday.FragmentDialog;
-import com.example.couchpotatosplan.myday.MyDayEvent;
-import com.example.couchpotatosplan.myday.MyDayEventAdapter;
-import com.example.couchpotatosplan.myday.MyDayEventList;
+import com.example.planner.R;
+import com.example.planner.myday.FragmentDialog;
+import com.example.planner.myday.MyDayEvent;
+import com.example.planner.myday.MyDayEventAdapter;
+import com.example.planner.myday.MyDayEventList;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

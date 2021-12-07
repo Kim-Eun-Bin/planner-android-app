@@ -1,6 +1,6 @@
-package com.example.couchpotatosplan.month;
+package com.example.planner.month;
 
-import static com.example.couchpotatosplan.weekly.CalendarUtils.formattedDate;
+import static com.example.planner.weekly.CalendarUtils.formattedDate;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.example.couchpotatosplan.R;
+import com.example.planner.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

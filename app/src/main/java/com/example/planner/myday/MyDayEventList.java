@@ -1,4 +1,4 @@
-package com.example.couchpotatosplan.myday;
+package com.example.planner.myday;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 

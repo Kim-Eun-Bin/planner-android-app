@@ -1,4 +1,4 @@
-package com.example.couchpotatosplan.month;
+package com.example.planner.month;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.couchpotatosplan.R;
-import com.example.couchpotatosplan.myday.MyDayEvent;
+import com.example.planner.R;
+import com.example.planner.myday.MyDayEvent;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 

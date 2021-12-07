@@ -1,4 +1,4 @@
-package com.example.couchpotatosplan;
+package com.example.planner;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -8,10 +8,10 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.couchpotatosplan.month.MonthFragment;
-import com.example.couchpotatosplan.myday.MyDayFragment;
-import com.example.couchpotatosplan.setting.SettingFragment;
-import com.example.couchpotatosplan.weekly.WeeklyFragment;
+import com.example.planner.month.MonthFragment;
+import com.example.planner.myday.MyDayFragment;
+import com.example.planner.setting.SettingFragment;
+import com.example.planner.weekly.WeeklyFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

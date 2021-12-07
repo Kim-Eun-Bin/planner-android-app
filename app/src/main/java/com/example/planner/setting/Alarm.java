@@ -1,8 +1,8 @@
-package com.example.couchpotatosplan.setting;
+package com.example.planner.setting;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
-import static com.example.couchpotatosplan.weekly.CalendarUtils.formattedDate;
+import static com.example.planner.weekly.CalendarUtils.formattedDate;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -17,10 +17,10 @@ import android.widget.TextView;
 
 import androidx.core.app.NotificationCompat;
 
-import com.example.couchpotatosplan.MainActivity;
-import com.example.couchpotatosplan.R;
-import com.example.couchpotatosplan.myday.MyDayEvent;
-import com.example.couchpotatosplan.myday.MyDayEventList;
+import com.example.planner.MainActivity;
+import com.example.planner.R;
+import com.example.planner.myday.MyDayEvent;
+import com.example.planner.myday.MyDayEventList;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
